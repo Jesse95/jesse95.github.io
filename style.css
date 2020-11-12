@@ -68,7 +68,7 @@ p {
     color: #a7a7a7;
 }
 
-nav a {
+nav ul a {
     font-family: "Raleway Regular", sans-serif;
     margin: 2em 0 2em 0;
     padding: 0;
@@ -77,12 +77,12 @@ nav a {
     text-decoration: none;
 }
 
-nav a.active {
+nav ul a.active {
     color: #FFB000;
     font-family: "Raleway SemiBold", sans-serif;
 }
 
-nav a:hover {
+nav ul a:hover {
     color: #FFB000;
     font-family: "Raleway SemiBold", sans-serif;
 }
@@ -197,6 +197,10 @@ nav {
     font-family: "Raleway Regular", sans-serif;
     font-size: var(--font-size2);
     color: white;
+
+}
+
+ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
