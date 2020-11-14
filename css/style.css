@@ -431,7 +431,7 @@ header {
 }
 
 .step3Item img {
-    width: 20vw;
+    width: calc(3 * var(--row-width));
     height: auto;
     margin: 1em 0 1em 0;
 }
@@ -841,4 +841,10 @@ footer p {
         width: 80%;
     }
 
+}
+
+@media (min-width: 1441px) {
+    :root {
+        --row-width: calc(1440px / 12);
+    }
 }
