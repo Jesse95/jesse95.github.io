@@ -1,0 +1,844 @@
+:root {
+    --font-sizeText: 2vmin;
+    --font-size1: 2vw;
+    --font-size2: 1.5vw;
+    --font-size3: 1.3vw;
+    --font-sizeLogo: 3vw;
+    --font-sizeButton: 2.03vmin;
+    --row-width: calc(100vw / 12);
+}
+
+html {
+    /*background: #FFB000;*/
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1420px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.container * {
+    border: 1px solid black;
+    position: relative;
+}*
+
+.container *:after {
+    content:attr(class);
+    position: absolute;
+    left: 0;
+    top: 0;
+}*/
+
+/*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+
+h1 {
+    font-family: "Raleway SemiBold", sans-serif;
+    font-size: var(--font-size1);
+    margin: 0 0 2em 0;
+    padding: 0;
+    color: white;
+}
+
+h2 {
+    font-family: "Raleway Regular", sans-serif;
+    font-size: var(--font-size2);
+    margin: 2em 0 2em 0;
+    padding: 0;
+    color: white;
+}
+
+h3 {
+    font-family: "PT Sans", sans-serif;
+    font-size: var(--font-size3);
+    margin: 0;
+    padding: 0;
+    color: #7a7a7a;
+}
+
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-size: var(--font-sizeText);
+    color: #a7a7a7;
+}
+
+nav ul a {
+    font-family: "Raleway Regular", sans-serif;
+    margin: 2em 0 2em 0;
+    padding: 0;
+    color: white;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+nav ul a.active {
+    color: #FFB000;
+    font-family: "Raleway SemiBold", sans-serif;
+}
+
+nav ul a:hover {
+    color: #FFB000;
+    font-family: "Raleway SemiBold", sans-serif;
+}
+
+
+.callToActionOld { /*Wird nicht benutzt */
+    width: fit-content;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: var(--font-sizeText);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    line-height: normal;
+    background-color: #FFB000;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.callToAction {
+    width: fit-content;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: var(--font-sizeText);
+    border: none;
+    line-height: normal;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: all 1s;
+    background: #FFB000;
+    color: white;
+}
+
+.callToAction:after {
+    position: absolute;
+    z-index: -1;
+    transition: all ease-in 1s;
+}
+
+.callToAction:hover {
+    background: #129FB3;
+    transform: scale(1.05);
+
+}
+
+.callToAction:active {
+    background: #129FB3;
+    top: 2px;
+    transform: scale(1.05);
+}
+
+.standard {
+    width: fit-content;
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: var(--font-sizeText);
+    border-radius: 3px;
+    border: 0.15em solid #129FB3;
+    line-height: normal;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: all 0.5s;
+    background: transparent;
+    color: #129FB3;
+}
+
+.standard:after {
+    position: absolute;
+    z-index: -1;
+    transition: all ease-in 0.5s;
+}
+
+.standard:hover {
+    background: #129FB3;
+    color: white;
+    transform: scale(1.05);
+}
+
+.standard:active {
+    background: #129FB3;
+    color: white;
+    transform: scale(1.05);
+    top: 2px;
+}
+
+i {
+    font-size: 1.5em;
+    width: 1.3em;
+    color: #FFB000;
+    transition: all 1s;
+}
+
+
+i:after {
+    position: absolute;
+    z-index: -1;
+    transition: all ease-in 1s;
+}
+
+i:hover {
+    color: #129FB3;
+    transform: scale(1.05);
+
+}
+
+i:active {
+    color: #129FB3;
+    top: 2px;
+    transform: scale(1.05);
+}
+
+/* Header Leiste */
+
+.headerAreaBG {
+    background: rgba(18, 159, 179, 1);
+    order: 1;
+
+    /*position: fixed; /*left: 50%;*/
+    width: 100%;
+    z-index: 9;
+
+}
+
+.headerArea {
+    margin: 0 var(--row-width) 0 var(--row-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    order: 2;
+    width: calc(5 * var(--row-width));
+    font-family: "Raleway Regular", sans-serif;
+    font-size: var(--font-size2);
+    color: white;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerArea li {
+    display: inline-block;
+}
+
+.logo {
+    order: 1;
+    font-size: var(--font-sizeLogo);
+    font-family: NovaMono, monospace;
+    color: white;
+}
+
+header {
+    height: 100vh;
+}
+
+/* Cover Bereich */
+.coverBG {
+    order: 2;
+    display: flex;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.cover {
+    width: 100%;
+    margin: 0 var(--row-width) 0 var(--row-width);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coverImage {
+    width: calc(5 * var(--row-width));
+}
+
+.coverHeadline {
+    width: calc(4 * var(--row-width));
+}
+
+.cover h1 {
+    color: #129FB3;
+}
+
+.cover h2 {
+    margin: 0;
+    margin-bottom: 0.3em;
+    color: #7a7a7a;
+}
+
+/* About Area */
+.aboutBG {
+    order: 3;
+}
+
+.about {
+    margin: 1em var(--row-width) 1em var(--row-width);
+}
+
+.about h3 {
+    color: #129FB3;
+}
+
+.aboutHeadlineBG {
+    background: #129FB3;
+}
+
+.aboutHeadline {
+    margin: 0 var(--row-width) 0 var(--row-width);
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+
+.aboutContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.aboutItem {
+    width: calc(3 * var(--row-width));
+}
+
+.wave {
+    order: 3;
+    width: 100%;
+}
+
+/*
+.smile {
+    width: 50%;
+    opacity: 100%;
+    position: relative;
+}*/
+
+.process {
+    order: 4;
+    background: linear-gradient(180deg, #19BDD5 0%, #04899C 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.processStep1, .processStep2, .processStep3, .processStep4, .processStep5 {
+    width: calc(10 * var(--row-width));
+    margin: 2em;
+}
+
+.processStep1 {
+    order: 1;
+}
+
+.processStep1 h3 {
+    color: #129FB3;
+}
+
+.step1Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: #129FB3;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.step1Image {
+    order: 1;
+    width: calc(4 * var(--row-width));
+    border: black 5pt;
+}
+
+.step1Item {
+    order: 2;
+    width: 40%;
+}
+
+.processStep2 {
+    order: 2;
+}
+
+.processStep2 h3 {
+    color: white;
+}
+
+
+.step2Content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.step2Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(3 * var(--row-width));
+}
+
+.step2Image {
+    width: 8em;
+    margin: 1em;
+}
+
+.processStep3 {
+    order: 5;
+}
+
+.step3Content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: white;
+    border: #129FB3;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.step3Content h3 {
+    color: #129FB3;
+}
+
+.step3Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(3 * var(--row-width));
+}
+
+.step3Item img {
+    width: 20vw;
+    height: auto;
+    margin: 1em 0 1em 0;
+}
+
+.processStep4 {
+    order: 6;
+}
+
+.step4Content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+    border: #129FB3;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.step4Content h3 {
+    color: #129FB3;
+}
+
+.step4Item {
+    width: calc(4 * var(--row-width));
+}
+
+.step4Image {
+    width: calc(7 * var(--row-width));
+}
+
+.processStep5 {
+    order: 7;
+}
+
+.step5Content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.step5Image {
+    width: 8em;
+    margin: 1em 0 1em 0;
+}
+
+.referencesBG {
+    order: 8;
+}
+
+.references {
+    margin: 0 var(--row-width) 0 var(--row-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.references h2 {
+    color: #129FB3;
+}
+
+.referencesContent {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.referencesItem {
+    width: calc(4.9 * var(--row-width));
+    height: 10em;
+    border-radius: 3px;
+    margin: 0.5em 0 0.5em 0;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.hbtn {
+    text-decoration: none;
+    font-family: "PT Sans", serif;
+    font-size: var(--font-size1);
+    line-height: normal;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #129FB3;
+    color: #ffffff;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+
+.hbtn img {
+    z-index: -3;
+    width: 5em;
+    align-self: center;
+}
+
+
+.hb-fill-left-rev::before {
+    position: absolute;
+    content: "";
+    background: #129FB3;
+    transition-duration: 2s;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.hb-fill-left-rev:hover::before {
+    width: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.hb-fill-left-rev:hover {
+    background: transparent;
+    color: #129FB3;
+    transition: color 2s ease 0s, background 0s ease 0s;
+}
+
+.hb-fill-right-rev::before {
+    position: absolute;
+    content: "";
+    background: #129FB3;
+    transition-duration: 2s;
+    z-index: -1;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.hb-fill-right-rev:hover::before {
+    width: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.hb-fill-right-rev:hover {
+    background: transparent;
+    color: #129FB3;
+    transition: color 2s ease 0s, background 0s ease 0s;
+}
+
+
+.references button {
+    align-self: center;
+}
+
+.contactBG {
+    order: 9;
+}
+
+.contact {
+    margin: 0 var(--row-width) 0 var(--row-width);
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contactItem {
+    width: 40%;
+}
+
+.contact .logo {
+    color: #7a7a7a;
+    margin: 0;
+    padding: 0;
+}
+
+.contact h2 {
+    color: #129FB3;
+}
+
+.contactForm {
+    width: 40%;
+}
+
+.formfield {
+    font-family: "PT Sans", serif;
+    font-size: var(--font-sizeText);
+    border-radius: 3px;
+    background-color: #eaeaea;
+    padding: 1em 1em 1em 4em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.formfield:focus {
+    background: #7a7a7a;
+    border: 3px solid rgba(0, 0, 0, 0);
+    color: #129FB3;
+    outline: none;
+    padding: 1em 1em 1em 4em;
+}
+
+.contactForm #name {
+    background-image: url("../figures/icons/address-book.svg");
+    background-size: 1.5em 1.5em;
+    background-position: 1em 1em;
+    background-repeat: no-repeat;
+}
+
+.contactForm #email {
+    background-image: url("../figures/icons/envelope.svg");
+    background-size: 1.5em 1.5em;
+    background-position: 1em 1em;
+    background-repeat: no-repeat;
+}
+
+.contactForm #message {
+    background-image: url("../figures/icons/pencil.svg");
+    background-size: 1.5em 1.5em;
+    background-position: 1em 1em;
+    background-repeat: no-repeat;
+    resize: none;
+}
+
+.contactForm #name:focus {
+    background-image: url("../figures/icons/address-book_cyan.svg");
+}
+
+.contactForm #email:focus {
+    background-image: url("../figures/icons/envelope_cyan.svg");
+}
+
+.contactForm #message:focus {
+    background-image: url("../figures/icons/pencil_cyan.svg");
+}
+
+.contactForm textarea {
+    width: 100%;
+    height: 15em;
+}
+
+.contactForm input:hover, .contactForm textarea:hover, .contactForm input:focus, .contactForm textarea:focus {
+    background-color: #e6e6e6;
+}
+
+footer {
+    background: #129FB3;
+    order: 10;
+    margin-top: 2em;
+}
+
+.footerContent {
+    margin: 0 var(--row-width) 0 var(--row-width);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+footer p {
+    color: white;
+}
+
+
+@media (max-width: 992px) {
+
+    :root {
+        --font-sizeText: 3vmin;
+        --font-size1: 5vw;
+        --font-size2: 4vw;
+        --font-size3: 3vw;
+        --font-sizeLogo: 15vw;
+        --font-sizeButton: 5.15vmin;
+        --row-width: calc(100vw / 12);
+    }
+
+    html {
+        text-align: center;
+    }
+
+    header {
+        height: auto;
+    }
+
+
+    .headerArea {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .logo {
+        margin: 0.2em;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    .coverBG {
+        margin-top: 2em;
+    }
+
+    .cover {
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .coverHeadline {
+        width: 80%;
+    }
+
+    .coverImage {
+        width: 80%;
+    }
+
+    .aboutContent {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .aboutItem {
+        width: 80%;
+    }
+
+    .processStep1, .processStep2, .processStep3, .processStep4, .processStep5 {
+        width: 100%;
+        margin: 2em;
+    }
+
+    .step1Content {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    .step4Content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .step4Item {
+        width: 40%;
+    }
+
+
+    .referencesContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .referencesItem {
+        width: 80%;
+    }
+
+
+    .contactContent {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .contactItem {
+        width: 80%;
+    }
+
+    .contactItem .logo {
+        font-size: var(--font-size2);
+    }
+
+    .footerContent {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footerItem {
+        width: 80%;
+    }
+
+}
