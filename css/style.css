@@ -26,7 +26,7 @@ html {
 .container * {
     border: 1px solid black;
     position: relative;
-}*
+}
 
 .container *:after {
     content:attr(class);
@@ -694,8 +694,44 @@ header {
     height: 15em;
 }
 
+.agbs {
+    font-family: "PT Sans", serif;
+    font-size: var(--font-sizeText);
+    color: #7a7a7a;
+    padding: 1em 1em 1em 4em;
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: flex-start;
+}
+
+.agbs input[type="checkbox"] {
+    display:none;
+}
+.agbs input[type="checkbox"] + label::before {
+    width: 1em;
+    height: 1em;
+    border-radius: 3px;
+    border: 2px solid #129FB3;
+    content: "";
+    float: left;
+    margin-right: 0.5em;
+}
+
+.agbs input[type="checkbox"]:hover+label::before {
+    transform: scale(1.05);
+    background-color: #129FB3;
+}
+
+.agbs input[type="checkbox"]:checked+label::before {
+    box-shadow: inset 0 0 0 3px #fff;
+    background-color: #129FB3;
+}
+
 .contactForm input:hover, .contactForm textarea:hover, .contactForm input:focus, .contactForm textarea:focus {
-    background-color: #e6e6e6;
+    background-color: #dbdbdb;
 }
 
 footer {
