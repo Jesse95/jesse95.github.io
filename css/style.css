@@ -278,7 +278,7 @@ ul {
 .logo {
     order: 1;
     font-size: var(--font-sizeLogo);
-    font-family: NovaMono, monospace;
+    font-family: 'Nova Mono', monospace;
     color: white;
 }
 
