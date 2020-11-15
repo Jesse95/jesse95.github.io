@@ -908,10 +908,14 @@ footer {
         justify-content: center;
     }
 
-    .contactItem, .contactForm {
+    .contactItem {
         width: 80%;
     }
 
+    .contactForm {
+        width: 80%;
+        margin-bottom: 1em;
+    }
 
     .contactItem .logo {
         font-size: var(--font-size2);
