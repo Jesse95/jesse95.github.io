@@ -44,6 +44,10 @@ html {
 }*/
 
 /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+a {
+    color: #129FB3;
+    text-underline: #129FB3;
+}
 
 h1 {
     font-family: Raleway, sans-serif;
