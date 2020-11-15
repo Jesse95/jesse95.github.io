@@ -1015,6 +1015,17 @@ footer {
 @media (min-width: 1441px) {
     :root {
         --row-width: calc(1440px / 12);
+        --font-sizeText: 14px;
+        --font-size1: 28px;
+        --font-size2: 21px;
+        --font-size3: 14px;
+        --font-sizeLogo: 28px;
+        --font-sizeButton: 15px;
+    }
+
+
+    nav {
+        width: calc(5 * var(--row-width));
     }
 }
 
