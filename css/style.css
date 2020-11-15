@@ -910,7 +910,7 @@ footer {
 
     .processStep1, .processStep2, .processStep3, .processStep4, .processStep5 {
         width: 100%;
-        margin: 2em;
+        margin: 0.5em;
     }
 
     .step1Content {
@@ -970,16 +970,22 @@ footer {
 
     .contactItem .logo {
         font-size: var(--font-size2);
+        text-align: left;
     }
 
     .footerContent {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        text-align: center;
     }
 
     .footerItem {
         width: 90%;
+    }
+
+    .impressum {
+        margin-bottom: 1em;
     }
 
 }
