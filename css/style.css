@@ -833,7 +833,7 @@ footer {
 
     #headerAreaBG.scroll .logo{
         color: #129FB3;
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
         width: 100%;
     }
@@ -841,64 +841,40 @@ footer {
     .headerArea {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .logo {
-        margin: 0.2em;
+        margin: 0.2em 0 0.2em 0.2em;
         text-align: center;
         width: 100%;
     }
 
 
-
     nav {
-        order: 2;
+        height: auto;
         width: 100%;
-        font-size: var(--font-size2);
-        color: white;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        text-align: center;
     }
 
     nav ul a {
-        font-family: "Raleway Regular", sans-serif;
-        margin: 2em 0 2em 0;
-        padding: 0;
-        color: white;
-        transition: all 0.2s ease-out;
-        text-decoration: none;
+        margin: 0;
     }
-
-    nav ul a.active {
-        color: #FFB000;
-        font-family: "Raleway SemiBold", sans-serif;
-    }
-
-    nav ul a:hover {
-        color: #FFB000;
-        font-family: "Raleway SemiBold", sans-serif;
-    }
-
-
 
     .cover {
         flex-direction: column-reverse;
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
     }
 
     .coverHeadline {
-        width: 80%;
+        width: 90%;
     }
 
     .coverImage {
-        width: 80%;
+        width: 90%;
     }
 
     .aboutContent {
@@ -908,7 +884,7 @@ footer {
     }
 
     .aboutItem {
-        width: 80%;
+        width: 90%;
     }
 
     .processStep1, .processStep2, .processStep3, .processStep4, .processStep5 {
@@ -929,7 +905,7 @@ footer {
     }
 
     .referencesItem {
-        width: 80vw;
+        width: 90vw;
     }
 
 
@@ -941,11 +917,11 @@ footer {
     }
 
     .contactItem {
-        width: 80%;
+        width: 90%;
     }
 
     .contactForm {
-        width: 80%;
+        width: 90%;
         margin-bottom: 1em;
     }
 
@@ -960,7 +936,7 @@ footer {
     }
 
     .footerItem {
-        width: 80%;
+        width: 90%;
     }
 
 }
