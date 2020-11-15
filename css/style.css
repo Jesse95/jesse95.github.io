@@ -2,10 +2,10 @@
 */
 :root {
     --font-sizeText: 2vmin;
-    --font-size1: 2vw;
-    --font-size2: 1.5vw;
-    --font-size3: 1.3vw;
-    --font-sizeLogo: 3vw;
+    --font-size1: 4vmin;
+    --font-size2: 3vmin;
+    --font-size3: 2vmin;
+    --font-sizeLogo: 4vmin;
     --font-sizeButton: 2.03vmin;
     --row-width: calc(100vw / 12);
 }
@@ -257,7 +257,7 @@ i:active {
 
 nav {
     order: 2;
-    width: calc(5 * var(--row-width));
+    width: calc(6 * var(--row-width));
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: var(--font-size2);
@@ -280,10 +280,6 @@ ul {
     font-size: var(--font-sizeLogo);
     font-family: 'Nova Mono', monospace;
     color: white;
-}
-
-header {
-    height: 100vh;
 }
 
 /* Cover Bereich */
@@ -336,6 +332,7 @@ header {
 
 .aboutHeadlineBG {
     background: #129FB3;
+    padding: 1em 0;
 }
 
 .aboutHeadline {
@@ -350,7 +347,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 
 
@@ -832,7 +829,7 @@ footer {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 990px) {
 
     :root {
         --font-sizeText: 3vmin;
@@ -908,9 +905,22 @@ footer {
         width: 90%;
     }
 
+    .processHeadline {
+        margin-bottom: 0;
+    }
+
+    .process h2{
+        margin: 0;
+        margin-bottom: 0.2em;
+    }
+
     .processStep1, .processStep2, .processStep3, .processStep4, .processStep5 {
         width: 100%;
-        margin: 0.5em 0.1em 0 0;
+        margin: 0;
+    }
+
+    .processStep2, .processStep3, .processStep4, .processStep5 {
+        margin: 2em 0;
     }
 
     .step1Content {
@@ -919,8 +929,11 @@ footer {
         flex-wrap: wrap;
     }
 
-    .step1Item, .step1Image {
+    .step1Item {
         width: 90%;
+    }
+    .step1Image {
+        width: 50%;
     }
 
     .step1Content, .step3Content, .step4Content {
@@ -1003,4 +1016,17 @@ footer {
     :root {
         --row-width: calc(1440px / 12);
     }
+}
+
+
+@media  (max-width: 1200px) and (min-width: 990px) {
+
+    .aboutItem {
+        width: calc(4 * var(--row-width));
+    }
+
+    nav {
+        width: calc(7 * var(--row-width));
+    }
+
 }
