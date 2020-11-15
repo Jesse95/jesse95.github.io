@@ -355,12 +355,6 @@ header {
     margin-bottom: -1px;
 }
 
-/*
-.smile {
-    width: 50%;
-    opacity: 100%;
-    position: relative;
-}*/
 .process {
     order: 4;
     background: linear-gradient(180deg, #19BDD5 0%, #04899C 100%);
@@ -396,11 +390,7 @@ header {
     border: #129FB3;
     padding: 1em;
     border-radius: 3px;
-
-
     box-shadow: 0 4px 7px #777;
-
-
 }
 
 .step1Image {
@@ -523,7 +513,7 @@ header {
 .step5Content {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1em;
 }
 
@@ -859,12 +849,9 @@ footer {
     }
 
     nav {
-        visibility: hidden;
+        display: none;
     }
 
-    .coverBG {
-        margin-top: 2em;
-    }
 
     .cover {
         flex-direction: column-reverse;
@@ -901,7 +888,7 @@ footer {
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        width: 100%;
+
     }
 
     .referencesContent {
@@ -910,7 +897,7 @@ footer {
     }
 
     .referencesItem {
-        width: 80%;
+        width: 80vw;
     }
 
 
@@ -920,9 +907,10 @@ footer {
         align-items: center;
     }
 
-    .contactItem {
+    .contactItem, .contactForm {
         width: 80%;
     }
+
 
     .contactItem .logo {
         font-size: var(--font-size2);
