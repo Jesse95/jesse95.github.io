@@ -838,15 +838,52 @@ footer {
         width: 100%;
     }
 
+    .headerArea {
+        display: flex;
+        flex-direction: column;
+    }
 
     .logo {
         margin: 0.2em;
         text-align: center;
+        width: 100%;
     }
 
+
+
     nav {
-        display: none;
+        order: 2;
+        width: 100%;
+        font-size: var(--font-size2);
+        color: white;
     }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul a {
+        font-family: "Raleway Regular", sans-serif;
+        margin: 2em 0 2em 0;
+        padding: 0;
+        color: white;
+        transition: all 0.2s ease-out;
+        text-decoration: none;
+    }
+
+    nav ul a.active {
+        color: #FFB000;
+        font-family: "Raleway SemiBold", sans-serif;
+    }
+
+    nav ul a:hover {
+        color: #FFB000;
+        font-family: "Raleway SemiBold", sans-serif;
+    }
+
 
 
     .cover {
