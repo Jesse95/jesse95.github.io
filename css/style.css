@@ -66,7 +66,7 @@ h2 {
 }
 
 h3 {
-    font-family: "PT Sans", sans-serif;
+    font-family: PT Sans, sans-serif;
     font-size: var(--font-size3);
     margin: 0;
     padding: 0;
@@ -75,7 +75,7 @@ h3 {
 
 
 p {
-    font-family: "PT Sans", sans-serif;
+    font-family: PT Sans, sans-serif;
     font-size: var(--font-sizeText);
     color: #a7a7a7;
 }
@@ -108,7 +108,7 @@ nav ul a:hover {
 .callToActionOld { /*Wird nicht benutzt */
     width: fit-content;
     text-decoration: none;
-    font-family: "PT Sans", sans-serif;
+    font-family: PT Sans, sans-serif;
     font-size: var(--font-sizeText);
     color: white;
     border: none;
@@ -121,7 +121,7 @@ nav ul a:hover {
 .callToAction {
     width: fit-content;
     text-decoration: none;
-    font-family: "PT Sans", sans-serif;
+    font-family: PT Sans, sans-serif;
     font-size: var(--font-sizeText);
     border: none;
     line-height: normal;
@@ -155,7 +155,7 @@ nav ul a:hover {
 .standard {
     width: fit-content;
     text-decoration: none;
-    font-family: "PT Sans", sans-serif;
+    font-family: PT Sans, sans-serif;
     font-size: var(--font-sizeText);
     border-radius: 3px;
     border: 0.15em solid #129FB3;
@@ -571,7 +571,7 @@ header {
 
 .hbtn {
     text-decoration: none;
-    font-family: "PT Sans", serif;
+    font-family: PT Sans, serif;
     font-size: var(--font-size1);
     line-height: normal;
     padding: 0.5em 1em 0.5em 1em;
@@ -692,7 +692,7 @@ header {
 }
 
 .formfield {
-    font-family: "PT Sans", serif;
+    font-family: PT Sans, serif;
     font-size: var(--font-sizeText);
     border-radius: 3px;
     background-color: #eaeaea;
@@ -750,7 +750,7 @@ header {
 }
 
 .agbs {
-    font-family: "PT Sans", serif;
+    font-family: PT Sans, serif;
     font-size: var(--font-sizeText);
     color: #7a7a7a;
     padding: 1em 1em 1em 4em;
