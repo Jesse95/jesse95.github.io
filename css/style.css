@@ -827,24 +827,21 @@ footer {
         --row-width: calc(100vw / 12);
     }
 
-    html {
-        text-align: center;
-    }
-
     header {
         height: auto;
     }
 
-
-    .headerArea {
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
+    #headerAreaBG.scroll .logo{
+        color: #129FB3;
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
     }
 
 
     .logo {
         margin: 0.2em;
+        text-align: center;
     }
 
     nav {
@@ -872,7 +869,6 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
     }
-
 
     .aboutItem {
         width: 80%;
