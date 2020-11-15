@@ -925,8 +925,13 @@ footer {
 
     .step1Content, .step3Content, .step4Content {
         box-shadow: none;
+        background-color: transparent;
+
     }
 
+    .step1Content p, .step1Content h3 , .step3Content h3, .step4Content p, .step4Content h3{
+        color: white;
+    }
     .step5Content {
         flex-wrap: wrap;
     }
