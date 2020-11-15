@@ -996,7 +996,12 @@ footer {
 
     .contactItem .logo {
         font-size: var(--font-size2);
-        text-align: left;
+        text-align: center;
+    }
+
+    .contactItem {
+        width: 90%;
+        text-align: center;
     }
 
     .footerContent {
