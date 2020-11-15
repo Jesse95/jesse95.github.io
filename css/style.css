@@ -46,15 +46,19 @@ html {
 /*font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
 
 h1 {
-    font-family: "Raleway SemiBold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
     font-size: var(--font-size1);
     margin: 0 0 2em 0;
     padding: 0;
     color: white;
+    animation: grow 4s linear infinite;
 }
 
+
 h2 {
-    font-family: "Raleway Regular", sans-serif;
+    font-family: Raleway , sans-serif;
+    font-weight: 400;
     font-size: var(--font-size2);
     margin: 2em 0 2em 0;
     padding: 0;
@@ -77,7 +81,8 @@ p {
 }
 
 nav ul a {
-    font-family: "Raleway Regular", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
     margin: 2em 0 2em 0;
     padding: 0;
     color: white;
@@ -85,14 +90,19 @@ nav ul a {
     text-decoration: none;
 }
 
+
 nav ul a.active {
     color: #FFB000;
-    font-family: "Raleway SemiBold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+
 }
 
 nav ul a:hover {
     color: #FFB000;
-    font-family: "Raleway SemiBold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+
 }
 
 .callToActionOld { /*Wird nicht benutzt */
@@ -225,15 +235,15 @@ i:active {
     color: #129FB3;
 }
 
-#headerAreaBG.scroll a{
+#headerAreaBG.scroll a {
     color: #129FB3;
 }
 
-#headerAreaBG.scroll a:hover{
+#headerAreaBG.scroll a:hover {
     color: #FFB000;
 }
 
-#headerAreaBG.scroll .logo{
+#headerAreaBG.scroll .logo {
     color: #129FB3;
 }
 
@@ -248,7 +258,8 @@ i:active {
 nav {
     order: 2;
     width: calc(5 * var(--row-width));
-    font-family: "Raleway Regular", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
     font-size: var(--font-size2);
     color: white;
 }
@@ -362,7 +373,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100vw;
+    width: 100vw;
 }
 
 .processHeadline h1 {
@@ -521,7 +532,6 @@ header {
     width: calc(1 * var(--row-width));
     margin: 1em 0 1em 0;
     filter: drop-shadow(0 4px 7px #777);
-
 }
 
 .referencesBG {
@@ -753,8 +763,9 @@ header {
 }
 
 .agbs input[type="checkbox"] {
-    display:none;
+    display: none;
 }
+
 .agbs input[type="checkbox"] + label::before {
     width: 1em;
     height: 1em;
@@ -765,12 +776,12 @@ header {
     margin-right: 0.5em;
 }
 
-.agbs input[type="checkbox"]:hover+label::before {
+.agbs input[type="checkbox"]:hover + label::before {
     transform: scale(1.05);
     background-color: #129FB3;
 }
 
-.agbs input[type="checkbox"]:checked+label::before {
+.agbs input[type="checkbox"]:checked + label::before {
     box-shadow: inset 0 0 0 3px #fff;
     background-color: #129FB3;
 }
@@ -792,11 +803,13 @@ footer {
     justify-content: space-between;
 }
 
-.footerItem p{
+.footerItem p {
     color: white;
 }
+
 .footerItem a {
-    font-family: "Raleway Regular", sans-serif;
+    font-family: Raleway , sans-serif;
+    font-weight: 400;
     margin: 2em 0 2em 0;
     padding: 0;
     color: white;
@@ -806,12 +819,16 @@ footer {
 
 .footerItem a.active {
     color: #FFB000;
-    font-family: "Raleway SemiBold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+
 }
 
 .footerItem a:hover {
     color: #FFB000;
-    font-family: "Raleway SemiBold", sans-serif;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+
 }
 
 
@@ -835,7 +852,7 @@ footer {
         height: auto;
     }
 
-    #headerAreaBG.scroll .logo{
+    #headerAreaBG.scroll .logo {
         color: #129FB3;
         font-size: 1.5em;
         text-align: center;
