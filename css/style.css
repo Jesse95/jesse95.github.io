@@ -932,13 +932,16 @@ footer {
         margin: 1em;
     }
 
+    .referencesBG {
+        width: 100%;
+    }
     .referencesContent {
         flex-direction: column;
         align-items: center;
     }
 
     .referencesItem {
-        width: 90vw;
+        width: 100%;
     }
 
 
@@ -949,13 +952,20 @@ footer {
         justify-content: center;
     }
 
-    .contactItem {
-        width: 90%;
-    }
+
 
     .contactForm {
         width: 90%;
         margin-bottom: 1em;
+    }
+
+    .agbs, .formfield{
+        width: 80%;
+    }
+
+    .contactForm textarea {
+        width: 80%;
+        height: 10em;
     }
 
     .contactItem .logo {
