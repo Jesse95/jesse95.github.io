@@ -5,16 +5,21 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <script src="https://kit.fontawesome.com/eff52d075c.js" crossorigin="anonymous"></script>
-
     <title>hochdrei</title>
-
+    <script>
+        window.onscroll = () => {
+            const nav = document.querySelector('#headerAreaBG');
+            if (this.scrollY >= 10) nav.className = 'scroll'; else nav.className = '';
+        };
+    </script>
 </head>
 <body>
 <div class="container">
     <header>
-        <section class="headerAreaBG">
+        <section id="headerAreaBG" class="headerAreaBG">
             <div class="headerArea">
                 <p class="logo">hochdrei</p>
                 <nav>
@@ -169,33 +174,49 @@
         <div class="processStep4">
             <h2>Schritt 4: Wir entwickeln das was Sie brauchen</h2>
             <div class="step4Content">
-                <div class="step4Item">
-                    <h3>Content first</h3>
-                    <p>Zuerst werden alle Texte, Grafiken und Videos
-                        entworfen und gesammelt und darauf aufbauend
-                        alles an den Inhalt angepasst entwickelt.</p>
+                <div class="step4Row">
+                    <div class="step4Item">
+                        <h3>Content first</h3>
+                        <p>Zuerst werden alle Texte, Grafiken und Videos
+                            entworfen und gesammelt und darauf aufbauend
+                            alles an den Inhalt angepasst entwickelt.</p>
+                    </div>
+                    <div class="arrow">
+                        <img src="figures/arrow_right.svg" alt="arrow">
+                    </div>
+                    <div class="step4Item">
+                        <h3>User Interface & Experience</h3>
+                        <p>Nachdem wir genau die Ziele und den Endkunden
+                            kennen, werden einzigartige Interfaces und
+                            erinnerungswürdige Experience geschaffen </p>
+                    </div>
                 </div>
-                <div class="step4Item">
-                    <h3>User Interface & Experience</h3>
-                    <p>Nachdem wir genau die Ziele und den Endkunden
-                        kennen, werden einzigartige Interfaces und
-                        erinnerungswürdige Experience geschaffen </p>
+                <div class="step4Row">
+                    <div class="arrow">
+                        <img src="figures/arrow_up.svg" alt="arrow">
+                    </div>
+
+                    <img class="step4Image" src="figures/prozess.svg" alt="Prozessdarstellung">
+                    <div class="arrow">
+                        <img src="figures/arrow_down.svg" alt="arrow">
+                    </div>
                 </div>
-
-                <img class="step4Image" src="figures/prozess.svg" alt="Prozessdarstellung">
-
-
-                <div class="step4Item">
-                    <h3>Moderne Webentwicklung</h3>
-                    <p>Die Entwicklung ihrer Website mit HTML, CSS und
-                        Javascript angepasst an ihre Bedürfnisse, responsive
-                        und auf dem neusten Stand der Technik. </p>
-                </div>
-                <div class="step4Item">
-                    <h3>Präsentation & Feedback</h3>
-                    <p>Wir halten Sie immer up to date über den aktuellen
-                        Stand und bauen ihr Feedback und das ihrer
-                        Endkunden stetig in unseren Prozess mit ein</p>
+                <div class="step4Row">
+                    <div class="step4Item">
+                        <h3>Moderne Webentwicklung</h3>
+                        <p>Die Entwicklung ihrer Website mit HTML, CSS und
+                            Javascript angepasst an ihre Bedürfnisse, responsive
+                            und auf dem neusten Stand der Technik. </p>
+                    </div>
+                    <div class="arrow">
+                        <img src="figures/arrow_left.svg" alt="arrow">
+                    </div>
+                    <div class="step4Item">
+                        <h3>Präsentation & Feedback</h3>
+                        <p>Wir halten Sie immer up to date über den aktuellen
+                            Stand und bauen ihr Feedback und das ihrer
+                            Endkunden stetig in unseren Prozess mit ein</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -247,7 +268,8 @@
                                       placeholder="Message"></textarea>
                         </label>
                         <label class="agbs">
-                            <input id="confirm" required type="checkbox" /><label for="confirm">Ich stimme diesem Rechtskrams zu.</label>
+                            <input id="confirm" required type="checkbox"/><label for="confirm">Ich stimme diesem
+                            Rechtskrams zu.</label>
 
                         </label>
                         <button type="submit" class="callToAction">Absenden</button>
@@ -260,7 +282,8 @@
                     <p>28359 Bremen</p>
                     <p>Germany</p>
                     <a href="http://facebook.de" target="_blank"><i class="socialButton fab fa-facebook-square"></i></a>
-                    <a href="http://instagram.de" target="_blank"><i class="socialButton fab fa-instagram-square"></i></a>
+                    <a href="http://instagram.de" target="_blank"><i
+                            class="socialButton fab fa-instagram-square"></i></a>
                     <a href="http://xing.de" target="_blank"> <i class=" socialButton fab fa-xing-square"></i></a>
                     <p>E-Mail: moin@hochdrei.de</p>
                     <p>Phone: 0175/42 888 21</p>
@@ -275,8 +298,11 @@
                     <p>© 2020 by hochdrei</p>
                 </div>
                 <div class="footerItem">
-                    <p>Verwendete Illustartionen erstellt von upklyak de.freepik.com</p>
-                    <p>https://de.freepik.com/vektoren/hintergrund</p>
+                    <a href='https://de.freepik.com/vektoren'>Verwendete Illustartionen erstellt von upklyak -
+                        de.freepik.com</a>
+                </div>
+                <div class="footerItem">
+                    <a href='#'>Impressum</a>
                 </div>
             </div>
         </footer>
