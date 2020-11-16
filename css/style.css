@@ -4,7 +4,7 @@
     --font-sizeText: 2vmin;
     --font-size1: 4vmin;
     --font-size2: 3vmin;
-    --font-size3: 2vmin;
+    --font-size3: 2.5vmin;
     --font-sizeLogo: 4vmin;
     --font-sizeButton: 2.03vmin;
     --row-width: calc(100vw / 12);
@@ -70,7 +70,7 @@ h2 {
 }
 
 h3 {
-    font-family: PT Sans, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: var(--font-size3);
     margin: 0;
     padding: 0;
@@ -79,7 +79,7 @@ h3 {
 
 
 p {
-    font-family: PT Sans, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: var(--font-sizeText);
     color: #a7a7a7;
 }
@@ -836,12 +836,12 @@ footer {
 @media (max-width: 990px) {
 
     :root {
-        --font-sizeText: 3vmin;
-        --font-size1: 5vw;
-        --font-size2: 4vw;
-        --font-size3: 3vw;
-        --font-sizeLogo: 15vw;
-        --font-sizeButton: 5.15vmin;
+        --font-sizeText: 2vmin;
+        --font-size1: 5vmin;
+        --font-size2: 4vmin;
+        --font-size3: 3vmin;
+        --font-sizeLogo: 15vmin;
+        --font-sizeButton: 2.15vmin;
         --row-width: calc(100vw / 12);
     }
 
@@ -1027,7 +1027,7 @@ footer {
         --font-sizeText: 14px;
         --font-size1: 28px;
         --font-size2: 21px;
-        --font-size3: 14px;
+        --font-size3: 17px;
         --font-sizeLogo: 28px;
         --font-sizeButton: 15px;
     }
