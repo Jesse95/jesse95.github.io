@@ -72,16 +72,17 @@ h2 {
 h3 {
     font-family: 'PT Sans', sans-serif;
     font-size: var(--font-size3);
+    font-weight: normal;
     margin: 0;
     padding: 0;
-    color: #7a7a7a;
+    color: #1b1632;
 }
 
 
 p {
     font-family: 'PT Sans', sans-serif;
     font-size: var(--font-sizeText);
-    color: #a7a7a7;
+    color: #1b1632;
 }
 
 nav ul a {
@@ -109,23 +110,11 @@ nav ul a:hover {
 
 }
 
-.callToActionOld { /*Wird nicht benutzt */
-    width: fit-content;
-    text-decoration: none;
-    font-family: PT Sans, sans-serif;
-    font-size: var(--font-sizeText);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    line-height: normal;
-    background-color: #FFB000;
-    padding: 0.5em 1em 0.5em 1em;
-}
 
 .callToAction {
     width: fit-content;
     text-decoration: none;
-    font-family: PT Sans, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: var(--font-sizeText);
     border: none;
     line-height: normal;
@@ -159,7 +148,7 @@ nav ul a:hover {
 .standard {
     width: fit-content;
     text-decoration: none;
-    font-family: PT Sans, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: var(--font-sizeText);
     border-radius: 3px;
     border: 0.15em solid #129FB3;
@@ -318,7 +307,7 @@ ul {
 .cover h2 {
     margin: 0;
     margin-bottom: 0.3em;
-    color: #7a7a7a;
+    color: #1b1632;
 }
 
 /* About Area */
@@ -408,7 +397,6 @@ ul {
 .step1Image {
     order: 1;
     width: calc(4 * var(--row-width));
-    border: black 5pt;
 }
 
 .step1Item {
@@ -441,7 +429,7 @@ ul {
 .step2Image {
     width: calc(1 * var(--row-width));
     margin: 1em;
-    filter: drop-shadow(0 4px 7px #777);
+    filter: drop-shadow(3px 4px 7px #1b1632);
 }
 
 .processStep3 {
@@ -456,7 +444,6 @@ ul {
     border: #129FB3;
     padding: 1em;
     border-radius: 3px;
-
     box-shadow: 0 4px 7px #777;
 
 }
@@ -532,7 +519,7 @@ ul {
 .step5Image {
     width: calc(1 * var(--row-width));
     margin: 1em 0 1em 0;
-    filter: drop-shadow(0 4px 7px #777);
+    filter: drop-shadow(3px 4px 7px #1b1632);
 }
 
 .referencesBG {
@@ -572,7 +559,7 @@ ul {
 
 .hbtn {
     text-decoration: none;
-    font-family: PT Sans, serif;
+    font-family: 'PT Sans', serif;
     font-size: var(--font-size1);
     line-height: normal;
     padding: 0.5em 1em 0.5em 1em;
@@ -679,7 +666,7 @@ ul {
 }
 
 .contact .logo {
-    color: #7a7a7a;
+    color: #1b1632;
     margin: 0;
     padding: 0;
 }
@@ -693,7 +680,7 @@ ul {
 }
 
 .formfield {
-    font-family: PT Sans, serif;
+    font-family: 'PT Sans', serif;
     font-size: var(--font-sizeText);
     border-radius: 3px;
     background-color: #eaeaea;
@@ -704,7 +691,7 @@ ul {
 }
 
 .formfield:focus {
-    background: #7a7a7a;
+    background: #1b1632;
     border: 3px solid rgba(0, 0, 0, 0);
     color: #129FB3;
     outline: none;
@@ -751,9 +738,9 @@ ul {
 }
 
 .agbs {
-    font-family: PT Sans, serif;
+    font-family: 'PT Sans', serif;
     font-size: var(--font-sizeText);
-    color: #7a7a7a;
+    color: #1b1632;
     padding: 1em 1em 1em 4em;
     margin-bottom: 1em;
     width: 100%;
