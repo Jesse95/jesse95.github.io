@@ -556,6 +556,13 @@ ul {
     justify-content: center;
 }
 
+.video {
+    width: calc(4.9 * var(--row-width));
+    height: 30em;
+    border-radius: 3px;
+
+}
+
 
 .hbtn {
     text-decoration: none;
@@ -843,7 +850,7 @@ footer {
     #headerAreaBG.scroll .logo {
         color: #129FB3;
         font-size: 1.5em;
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
 
@@ -855,7 +862,7 @@ footer {
 
     .logo {
         margin: 0.2em 0 0.2em 0.2em;
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
 
@@ -868,6 +875,47 @@ footer {
 
     nav ul a {
         margin: 0;
+        display: none;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        -webkit-transform:rotate(360deg);
+        border-style: solid;
+        border-width: 0 60px 60px 0;
+        border-color: transparent #FFB000 transparent transparent;
+    }
+
+    .mobilMenu:hover {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        margin: 0;
+        background-color: #FFB000;
+    }
+
+    .mobilMenu:hover ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .mobilMenu:hover ul a {
+        width: 90vmin;
+        color: white;
+        z-index: 99;
+    }
+
+    .menu {
+        top: 20px;
+        right: 50px;
+        position: absolute;
+        color: white;
     }
 
     .cover {
