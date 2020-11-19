@@ -872,7 +872,6 @@ footer {
         width: 100%;
     }
 
-
     nav {
         height: auto;
         width: 100%;
@@ -881,7 +880,6 @@ footer {
 
     nav ul a {
         margin: 0;
-        display: none;
     }
 
     .triangle {
@@ -1084,7 +1082,7 @@ footer {
 }
 
 
-@media  (max-width: 1200px) and (min-width: 990px) {
+@media  (max-width: 1200px) and (min-width: 991px) {
 
     .aboutItem {
         width: calc(4 * var(--row-width));
