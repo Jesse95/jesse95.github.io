@@ -19,6 +19,7 @@ html {
     border: 0;
 }
 
+
 .container {
     margin: 0 auto;
     padding: 0;
@@ -280,7 +281,8 @@ ul {
     order: 2;
     display: flex;
     align-items: center;
-    margin-top: 10em;
+    margin-top: 5em;
+    width: 100%;
 }
 
 .cover {
@@ -297,7 +299,7 @@ ul {
 }
 
 .coverHeadline {
-    width: calc(4 * var(--row-width));
+    width: calc(5 * var(--row-width));
 }
 
 .cover h1 {
@@ -313,6 +315,13 @@ ul {
 /* About Area */
 .aboutBG {
     order: 3;
+}
+
+.hoverbox {
+    background-color: #FFB000;
+    width: calc(4 * var(--row-width));
+    padding: 1em;
+    color: white;
 }
 
 .about {
@@ -843,9 +852,6 @@ footer {
         text-align: center;
     }
 
-    header {
-        height: auto;
-    }
 
     #headerAreaBG.scroll .logo {
         color: #129FB3;
@@ -917,6 +923,9 @@ footer {
         position: absolute;
         color: white;
     }
+    .coverBG {
+        margin-top: 13em;
+    }
 
     .cover {
         flex-direction: column-reverse;
@@ -933,6 +942,7 @@ footer {
     .coverImage {
         width: 90%;
     }
+
 
     .aboutContent {
         flex-direction: column;
@@ -1082,6 +1092,10 @@ footer {
 
     nav {
         width: calc(7 * var(--row-width));
+    }
+
+    .coverBG {
+        margin-top: 8em;
     }
 
 }
